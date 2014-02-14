@@ -1,3 +1,4 @@
+@(pledgeNum : java.lang.String)
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -10,11 +11,12 @@
 
     <title>Kar Bhala</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/stylesheets/normalize.css">
+	<link rel="stylesheet" href="/assets/stylesheets/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 
-    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="/assets/javascripts/modernizr-2.6.2.min.js"></script>
+     <script src="/assets/javascripts/jquery-1.9.0.min.js"></script>
     <!--[if lt IE 9]>
         <script src="https://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
         <script>window.jQuery || document.write('<script src="js/IE9.js"><\/script>')</script>
@@ -40,7 +42,7 @@
                         <a href="#">Read A<br> Story</a>
                     </li>
                     <li>
-                        <a href="#">Kar<br><span>Bhala</span></a>
+                        <a id="karbhala" href="#">Kar<br><span>Bhala</span></a>
                     </li>
                     <li>
                         <a href="#">Share Your<br> Story</a>
@@ -48,11 +50,11 @@
                 </ul>
                 <div class="clearfix"></div><!--CLEARFIX-->
             </nav>
-            <div id= "motive" class ="motive_kar" style ="width:400px;margin:auto;text-align: center;color: white;padding-top: 20px;">Let's make Earth a better place to live</div>
         </header>
+        <div id= "motive" class ="motive_kar" style ="width:400px;margin:auto;text-align: center;color: white;padding-top: 20px;">Help Earth to be better a place to live.</div>
         <div id="body">
             <section id="pledge">
-                <p class="counter">000006</p>
+                <p class="counter">@pledgeNum</p>
                 <p class="pledge-text">People have pledged to do an <span>Act of Kindness</span></p>
                 <a href="#" class="pledge-button">I Pledge <span>An Act of Kindness</span></a>
                 <a href="#" class="pledge-share-story">Share Your Story</a>
@@ -61,9 +63,15 @@
                     <li>Twitter Follow button goes here</li>
                 </ul> -->
                 <div class="social-follow">
-                    <div class="fb-likes">Facebook</div>
-                    <div class="tw-follow">Twitter</div>
-                    <div class="clearfix"></div><!-- CLEARFIX -->
+	                    <div class="fb-likes">
+	                    	<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fkarbhala&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=21&amp;appId=1386557601568952" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:24px; width:110px;" allowTransparency="true"></iframe>
+	                    </div>
+                    </div><!-- social-follow -->
+                    <div class="tw-follow">
+						<a href="https://twitter.com/karbhala" class="twitter-follow-button" >Follow KarBhala</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div><!-- tw-follow -->
+					<div class="clearfix"></div><!-- CLEARFIX -->
                 </div>
             </section><!--pledge-->
             <section id="home-trending-stories">
@@ -120,43 +128,23 @@
             </section><!--home-popular-stories-->
         </div><!--body-->
     </div><!--everything-but-footer-->
-    <footer>
-        <ul>
-            <li>
-                <a href="#">About Us</a>
-            </li>
-            <li>
-                <a href="#">Our Story</a>
-            </li>
-            <li>
-                <a href="#">Terms of Use</a>
-            </li>
-        </ul>
-    </footer>
+    <footer></footer>
     <div id="login-popup">
-        <div class="shield"></div><!--shield-->
-        <h5>
-            Authenticate Your Pledge
-            <a href="#" class="popup-close"></a>
-        </h5>
+        <h5>Login</h5>
         <div class="popup-inner">
-            <p>I, hereby, pledge to do an act of kindness over the next few days, months, year, or whenever. Preferably, sooner than later.</p>
-            <div class="social-login-container">
-                <a href="#">
-                    <div class="fb-ic"></div><!--fb-ic-->
-                    <div class="fb-bg"></div><!--fb-bg-->
-                </a><!--fb-login-->
-                <a href="#">
-                    <div class="tw-ic"></div><!--tw-ic-->
-                    <div class="tw-bg"></div><!--tw-bg-->
-                </a><!--tw-login-->
-                <a href="#">
-                    <div class="gp-ic"></div><!--gp-ic-->
-                    <div class="gp-bg"></div><!--gp-bg-->
-                </a><!--gp-login-->
-            </div><!--social-login-container-->
-            <p>By logging in through Facebook, Twitter, or Google plus, you are authenticating your pledge. Please be assured, we do not share anything on your social media accounts without your explicit permission.</p>
+      
         </div><!--popup-inner-->
     </div><!--login-popup-->
+    <script type="text/javascript">
+    $('#karbhala').hover(
+            function () {
+            	  $('#motive').removeClass('motive_kar');
+            }, 
+            function () {
+            	  $('#motive').addClass('motive_kar');
+            }
+        );
+   
+    </script>
 </body>
 </html>
