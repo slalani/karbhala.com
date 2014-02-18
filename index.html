@@ -19,6 +19,19 @@
         <script src="https://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
         <script>window.jQuery || document.write('<script src="js/IE9.js"><\/script>')</script>
     <![endif]-->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <script src="js/blocksit.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#stories-content').BlocksIt({
+                numOfCol: 4,
+                offsetX: 8,
+                offsetY: 8,
+                blockElement: '.story'
+            });
+        });
+    </script>
 </head>
 <body>
     <!--[if lt IE 7]>
@@ -37,7 +50,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Read A<br> Story</a>
+                        <a href="#stories">Read A<br> Story</a>
                     </li>
                     <li>
                         <a href="#">Kar<br><span>Bhala</span></a>
@@ -66,58 +79,310 @@
                     <div class="clearfix"></div><!-- CLEARFIX -->
                 </div>
             </section><!--pledge-->
-            <section id="home-trending-stories">
-                <h3>Trending Stories&#58;</h3>
-                <ul>
-                    <li>
-                        <h4>
-                            <a href="#">Heading</a>
-                        </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus</p>
-                        <a href="#" class="learn-more">Learn more..</a>
-                    </li>
-                    <li>
-                        <h4>
-                            <a href="#">Heading</a>
-                        </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus</p>
-                        <a href="#" class="learn-more">Learn more..</a>
-                    </li>
-                    <li>
-                        <h4>
-                            <a href="#">Heading</a>
-                        </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus</p>
-                        <a href="#" class="learn-more">Learn more..</a>
-                    </li>
-                </ul>
-            </section><!--home-trending-stories-->
-            <section id="home-popular-stories">
-                <h3>Most Popular Stories&#58;</h3>
-                <ul>
-                    <li>
-                        <h4>
-                            <a href="#">Heading</a>
-                        </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus</p>
-                        <a href="#" class="learn-more">Learn more..</a>
-                    </li>
-                    <li>
-                        <h4>
-                            <a href="#">Heading</a>
-                        </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus</p>
-                        <a href="#" class="learn-more">Learn more..</a>
-                    </li>
-                    <li>
-                        <h4>
-                            <a href="#">Heading</a>
-                        </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus</p>
-                        <a href="#" class="learn-more">Learn more..</a>
-                    </li>
-                </ul>
-            </section><!--home-popular-stories-->
+            <section id="stories">
+                <div id="stories-content">
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/1.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/2.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/3.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/4.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/5.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/6.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/7.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/8.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/9.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/10.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/11.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/12.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/1.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/2.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/3.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/4.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/5.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/6.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/7.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                    <a class="story" href="#">
+                        <figure>
+                            <img src="img/kindness/8.jpg" alt="">
+                            <div class="love-count">78965</div>
+                            <figcaption>
+                                <h4>Heading</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ipsum quam. Aliquam euismod, nulla non eleifend laoreet, sapien elit faucibus mi, eu sodales lectus leo vel felis. Nullam sodales, ante ac vehicula sodales, quam purus imperdiet nulla, dapibus sollicitudin mi felis ut metus..</p>
+                            </figcaption>
+                        </figure>
+                        <div class="credits">
+                            <img src="img/avatars/sohail.jpg" alt="">
+                            <p class="author-name">Sohail Lalani</p>
+                            <p class="author-location">Dharamsala, India</p>
+                        </div><!--credits-->
+                    </a><!--story-->
+                </div><!--stories-content-->
+            </section><!--stories-->
         </div><!--body-->
     </div><!--everything-but-footer-->
     <footer>
@@ -133,6 +398,22 @@
             </li>
         </ul>
     </footer>
+    <div class="search-and-filter">
+        <div class="search-filter-container">
+            <p class="stories-logo">Kar <span>Bhala</span></p>
+            <form class="search">
+                <input placeholder="Search and hit return">
+                <button>Search</button>
+            </form>
+            <form class="filter">
+                <label>Sort by</label>
+                <select>
+                    <option>Newest</option>
+                    <option>Popularity</option>
+                </select>
+            </form>
+        </div><!--search-filter-container-->
+    </div><!--search-and-filter-->
     <div id="login-popup">
         <div class="shield"></div><!--shield-->
         <h5>
@@ -158,5 +439,6 @@
             <p>By logging in through Facebook, Twitter, or Google plus, you are authenticating your pledge. Please be assured, we do not share anything on your social media accounts without your explicit permission.</p>
         </div><!--popup-inner-->
     </div><!--login-popup-->
+
 </body>
 </html>
