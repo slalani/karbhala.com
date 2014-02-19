@@ -25,14 +25,14 @@ img{vertical-align:middle;}fieldset{border:0;margin:0;padding:0;}textarea{resize
 
 body {
 	width:100%;
-    background: url('../img/pw_maze_black.png');
+    background: url('../images/pw_maze_black.png');
     font-family:'Open Sans', sans-serif;
 }
 
 .background {
 	width:100%;
 	height: 867px;
-	background:url('../img/original.jpg') center top no-repeat; /*Temperory*/
+	background:url('../images/original.jpg') center top no-repeat; /*Temperory*/
 	position: absolute;
 	z-index: -1;
 }
@@ -42,7 +42,7 @@ body {
 .mesh-overlay {
 	width:100%;
 	height:100%;
-	background: url('../img/diagonal-lines-50px.png');
+	background: url('../images/diagonal-lines-50px.png');
 }
 
 .black-overlay {
@@ -250,7 +250,7 @@ form.search {
 }
 
 form.search input {
-	background:rgba(0,0,0,0) url('../img/search.png') right center no-repeat;
+	background:rgba(0,0,0,0) url('../images/search.png') right center no-repeat;
 	padding:10px 0;
 	width:260px;
 	border:none;
@@ -283,7 +283,7 @@ form.filter label {
 
 form.filter select {
 	color:#a9a9a9;
-	background:rgba(0,0,0,0) url('../img/arrow-dropdown-gray.png') right center no-repeat;
+	background:rgba(0,0,0,0) url('../images/arrow-dropdown-gray.png') right center no-repeat;
 	border:0;
 	-webkit-appearance:none;
 	outline:0;
@@ -353,7 +353,7 @@ a.story:hover .love-count {
 	height:16px;
 	content: " ";
 	display:inline-block;
-	background: url('../img/heart.png') right top no-repeat;
+	background: url('../images/heart.png') right top no-repeat;
 	margin-right:10px;
 }
 
@@ -422,11 +422,11 @@ a.story:hover figcaption p {
 	display: inline-block;
 	content: " ";
 	margin-right: 5px;
-	background-image: url('../img/location.png');
+	background-image: url('../images/location.png');
 }
 
 a.story:hover .author-location:before {
-	background:url('../img/location.png') right top;
+	background:url('../images/location.png') right top;
 }
 
 footer {
@@ -488,7 +488,7 @@ footer ul li a:hover{
 	display: block;
 	width: 29px;
 	height: 29px;
-	background: url('../img/close-button.png') no-repeat;
+	background: url('../images/close-button.png') no-repeat;
 	position: absolute;
 	top: -15px;
 	right: -15px;
@@ -546,7 +546,7 @@ footer ul li a:hover{
 }
 
 .fb-ic:after {
-	content: url(../img/fb-icon.png);
+	content: url(../images/fb-icon.png);
 	display: block;
   	padding: 9px 10px 5px 15px;
 }
@@ -585,7 +585,7 @@ footer ul li a:hover{
 }
 
 .tw-ic:after {
-	content: url(../img/tw-icon.png);
+	content: url(../images/tw-icon.png);
 	display: block;
   padding: 11px 10px 6px 11px;
 }
@@ -623,7 +623,7 @@ footer ul li a:hover{
 }
 
 .gp-ic:after {
-	content: url(../img/g-icon.png);
+	content: url(../images/g-icon.png);
 	display: block;
   	padding: 11px 10px 6px 13px;
 }
