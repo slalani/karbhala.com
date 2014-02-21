@@ -56,6 +56,7 @@ body {
 	height:100%;
 	background: -webkit-linear-gradient(left, #000, rgba(0, 0, 0, 0), #000);
 	background: -moz-linear-gradient(left, #000, rgba(0, 0, 0, 0), #000);
+	background: -ms-linear-gradient(left, #000, rgba(0, 0, 0, 0), #000);
 	background: -o-linear-gradient(left, #000, rgba(0, 0, 0, 0), #000);
 	background: linear-gradient(left, #000, rgba(0, 0, 0, 0), #000);
 }
@@ -167,8 +168,10 @@ a.pledge-button {
 	font-weight:bold;
 	text-align: center;
 	text-transform: uppercase;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29ABE2', endColorstr='#0071BC',GradientType=0 ); /* IE6-9 */
 	background: -webkit-linear-gradient(top, #29ABE2, #0071BC);
 	background: -moz-linear-gradient(top, #29ABE2, #0071BC);
+	background: -ms-linear-gradient(top, #29ABE2, #0071BC);
 	background: -o-linear-gradient(top, #29ABE2, #0071BC);
 	background: linear-gradient(top, #29ABE2, #0071BC);
 	border-radius:12px;
@@ -749,8 +752,10 @@ footer ul li a:hover{
 	font-weight:bold;
 	text-align: center;
 	text-transform: uppercase;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29ABE2', endColorstr='#0071BC',GradientType=0 ); /* IE6-9 */
 	background: -webkit-linear-gradient(top, #29ABE2, #0071BC);
 	background: -moz-linear-gradient(top, #29ABE2, #0071BC);
+	background: -ms-linear-gradient(top, #29ABE2, #0071BC);
 	background: -o-linear-gradient(top, #29ABE2, #0071BC);
 	background: linear-gradient(top, #29ABE2, #0071BC);
 	border-radius:12px;
@@ -758,10 +763,148 @@ footer ul li a:hover{
 }
 
 
+/*Read Storty Popup*/
+
+#read-story {
+	width:90%;
+	position: absolute;
+	top: 5%;
+	left:5%;
+	margin:0 auto;
+	z-index: 10;
+	/*border: rgba(255, 255, 255, 0.4) 10px solid;*/
+	border-radius: 10px;
+	/*background: #000 url('../images/stripes-grey.png');*/
+}
+
+#read-story .shield {
+	background: rgba(0, 0, 0, 0.98);
+}
+
+#read-story .popup-close {
+	z-index:11;
+}
+
+#read-story h5 {
+	padding: 10px 10px;
+	font-weight: 600;
+	color: #E2E2E2;
+	text-transform: capitalize;
+	text-align: left;
+	font-size:27px;
+	margin: 0 0 20px 20px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+#read-story .popup-inner {
+	padding:0;
+	position:relative;
+	height:454px;
+}
+
+.story-bg {
+	width:100%;
+	height:250px;
+	background:#000 url('../images/original.jpg') center center no-repeat;
+}
+
+.readstory-container {
+	position:absolute;
+	top:70px;
+}
+
+.story-collumn {
+	width:calc(61% - 40px);
+	padding:20px;
+	float:left;
+	background:rgba(7,7,7,0.7);
+	margin-left:1%;
+	margin-right:1%;
+	border-radius:4px;
+}
+
+.comments-collumn {
+	width:calc(36% - 40px);
+	padding:20px;
+	background:rgba(7,7,7,0.7);
+	float:left;
+	margin-right:1%;
+	border-radius:4px;
+}
+
+.story-in-detail p {
+	color: #474747;
+	font-size: 13px;
+	margin-bottom:10px;
+}
+
+.story-in-detail img {
+	max-width:300px;
+	float:right;
+	margin:0 0 10px 10px;
+	border-radius:4px;
+}
+
+.vgradient-overlay {
+	width:100%;
+	height:100%;
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #000);
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), #000);
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), #000);
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0), #000);
+	background: linear-gradient(top, rgba(0, 0, 0, 0), #000);
+}
+
+ul.tags {}
+
+ul.tags li {
+	display:inline-block;
+}
+
+ul.tags li a {
+	padding:5px 10px;
+	background:#444444;
+	color:#fff;
+	display:block;
+	margin-bottom:5px;
+}
+
+ul.tags li a:hover {
+	background:#429abe;
+}
+
+
 /*Akash's Code*/
+
 .motive_kar{
 	visibility: hidden;
 }
+
+
+/*Styling for the scroll bar*/
+
+::-webkit-scrollbar {
+	  width: 15px;
+} /* this targets the default scrollbar (compulsory) */
+
+::-webkit-scrollbar-track {
+	  background-color: #000;
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-thumb {
+	  /*background-color: rgba(255, 255, 255, 0.1); 
+	  background: rgba(255, 255, 255, 0.1) url(http://subtlepatterns.com/patterns/simple_dashed.png); 
+	  */background:  #191919 url(../images/slant-mt-bg.png);
+} /* this will style the thumb, ignoring the track */
+
+::-webkit-scrollbar-button {
+	  background-color: rgba(255, 255, 255, 0.2);
+	  background:#3d3d3d;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+::-webkit-scrollbar-corner {
+	  background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
 
 
 /* =========================================
