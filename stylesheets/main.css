@@ -722,11 +722,20 @@ footer ul li a:hover{
 	display:none;
 }
 
+#write-story label[for="anon-post"] {
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: bottom;
+	line-height: 14px;
+}
+
 .lt-ie10 #write-story label {
 	display:block;
 }
 
-#write-story input, #write-story textarea {
+#write-story input[type="text"],
+#write-story input[type="file"],
+#write-story textarea {
 	display:block;
 	width:160px;
 	width:90%;
@@ -792,8 +801,25 @@ footer ul li a:hover{
 	text-transform: capitalize;
 	text-align: left;
 	font-size:27px;
-	margin: 0 0 20px 20px;
+	margin: 0 0 8px 20px;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+#read-story h5 a.story-by {
+	display: block;
+	font-size: 12px;
+	text-align: right;
+	text-transform: initial;
+	color: #429ABE;
+}
+
+#read-story h5 a.story-by:hover {
+	color: #E2E2E2;
+}
+
+#read-story h5 a.story-by:before {
+	content:"Story by ";
+	color: #E2E2E2;
 }
 
 #read-story .popup-inner {
@@ -871,6 +897,17 @@ ul.tags li a {
 
 ul.tags li a:hover {
 	background:#429abe;
+}
+
+#read-story .fb-share-button {
+	display:inline-block;
+	margin-right:5px;
+	margin-top:10px;
+}
+#read-story .tw-follow {
+	display:inline-block;
+	margin-top:10px;
+	height:24px !important;
 }
 
 
